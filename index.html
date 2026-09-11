@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Victor ❤️ Roberta</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background: #fff7f8;
+    color: #44252d;
+}
+
+/* CAPA */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+    background:
+        radial-gradient(circle at top left, #ffe1e7, transparent 40%),
+        radial-gradient(circle at bottom right, #f7d8df, transparent 40%),
+        #fff7f8;
+}
+
+.hero-card {
+    width: 100%;
+    max-width: 700px;
+    padding: 35px 25px;
+}
+
+.heart {
+    font-size: 55px;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.12);
+    }
+}
+
+.small-title {
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    color: #9d5c6b;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 15px 0;
+    color: #6f3040;
+}
+
+.subtitle {
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.date {
+    margin-top: 25px;
+    font-size: 15px;
+    color: #96616d;
+}
+
+.scroll {
+    display: inline-block;
+    margin-top: 40px;
+    text-decoration: none;
+    color: #fff;
+    background: #9d5364;
+    padding: 14px 25px;
+    border-radius: 30px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* SEÇÕES */
+
+section {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 70px 22px;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 32px;
+    color: #6f3040;
+    margin-bottom: 30px;
+}
+
+/* FOTO PRINCIPAL */
+
+.main-photo {
+    width: 100%;
+    height: 360px;
+    border-radius: 25px;
+    object-fit: cover;
+    display: block;
+    box-shadow: 0 15px 40px rgba(80, 30, 40, 0.15);
+}
+
+/* CONTADOR */
+
+.counter-box {
+    text-align: center;
+    background: white;
+    border-radius: 25px;
+    padding: 30px 15px;
+    box-shadow: 0 12px 35px rgba(80, 30, 40, 0.10);
+}
+
+.counter {
+    font-size: 25px;
+    line-height: 1.7;
+    color: #8e4658;
+}
+
+.counter strong {
+    color: #6f3040;
+}
+
+/* TEXTO */
+
+.message {
+    background: white;
+    padding: 30px 25px;
+    border-radius: 25px;
+    font-size: 20px;
+    line-height: 1.8;
+    box-shadow: 0 12px 35px rgba(80, 30, 40, 0.10);
+    text-align: center;
+}
+
+/* PLAYLIST */
+
+.spotify {
+    background: white;
+    padding: 15px;
+    border-radius: 25px;
+    box-shadow: 0 12px 35px rgba(80, 30, 40, 0.10);
+}
+
+.spotify iframe {
+    width: 100%;
+    height: 352px;
+    border: none;
+    border-radius: 15px;
+}
+
+/* GALERIA */
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(80, 30, 40, 0.12);
+}
+
+/* CARTA */
+
+.letter {
+    background: white;
+    border-radius: 25px;
+    padding: 35px 25px;
+    font-size: 20px;
+    line-height: 1.9;
+    box-shadow: 0 12px 35px rgba(80, 30, 40, 0.10);
+}
+
+.letter p {
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+/* FINAL */
+
+.final {
+    text-align: center;
+    padding: 90px 20px;
+    background: #6f3040;
+    color: white;
+}
+
+.final-heart {
+    font-size: 50px;
+}
+
+.final h2 {
+    font-size: 35px;
+    margin: 15px 0;
+}
+
+.final p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    background: #552631;
+    color: #ead4d9;
+    font-size: 13px;
+}
+
+/* CELULAR */
+
+@media (max-width: 500px) {
+
+    h1 {
+        font-size: 42px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 55px 18px;
+    }
+
+    .gallery img {
+        height: 180px;
+    }
+
+    .main-photo {
+        height: 300px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<!-- =========================
+     CAPA
+========================= -->
+
+<div class="hero">
+
+    <div class="hero-card">
+
+        <div class="heart">❤️</div>
+
+        <div class="small-title">
+            Uma história de amor
+        </div>
+
+        <h1>
+            Victor & Roberta
+        </h1>
+
+        <div class="subtitle">
+            "Por todo amor que houver nessa vida ❤️"
+        </div>
+
+        <div class="date">
+            Juntos desde 14 de setembro de 2023
+        </div>
+
+        <a class="scroll" href="#historia">
+            Nossa história ↓
+        </a>
+
+    </div>
+
+</div>
+
+
+<!-- =========================
+     FOTO PRINCIPAL
+========================= -->
+
+<section id="historia">
+
+    <h2 class="section-title">
+        Nossa história ❤️
+    </h2>
+
+    <!-- FOTO PRINCIPAL -->
+    <img
+        src="foto1.jpg"
+        class="main-photo"
+        alt="Victor e Roberta"
+    >
+
+</section>
+
+
+<!-- =========================
+     CONTADOR
+========================= -->
+
+<section>
+
+    <h2 class="section-title">
+        Nosso tempo juntos ⏳
+    </h2>
+
+    <div class="counter-box">
+
+        <div class="counter" id="contador">
+            Calculando...
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     MENSAGEM
+========================= -->
+
+<section>
+
+    <h2 class="section-title">
+        Para você ❤️
+    </h2>
+
+    <div class="message">
+
+        Eu te amo mais que o infinito, por todas as horas
+        que passamos, momentos felizes e sentimentos verdadeiro.
+        <br><br>
+        Nossa vida é cheia de coisas boas e amor acima de tudo.
+        <br><br>
+        Eu te amo hoje e sempre até o final da minha vida ❤️
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     PLAYLIST
+========================= -->
+
+<section>
+
+    <h2 class="section-title">
+        Nossa trilha sonora 🎵
+    </h2>
+
+    <div class="spotify">
+
+        <iframe
+            src="https://open.spotify.com/embed/playlist/2IwkwZE3FlHSJIplgqeo6u?utm_source=generator"
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOTOS
+========================= -->
+
+<section>
+
+    <h2 class="section-title">
+        Alguns dos nossos momentos 📸
+    </h2>
+
+    <div class="gallery">
+
+        <img src="foto1.jpg" alt="Momento 1">
+
+        <img src="foto2.jpg" alt="Momento 2">
+
+        <img src="foto3.jpg" alt="Momento 3">
+
+        <img src="foto4.jpg" alt="Momento 4">
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CARTA
+========================= -->
+
+<section>
+
+    <h2 class="section-title">
+        Uma última coisa... 💌
+    </h2>
+
+    <div class="letter">
+
+        <p>
+            Meu amor,
+        </p>
+
+        <p>
+            Eu te amo mais que o infinito, por todas as horas
+            que passamos, momentos felizes e sentimentos verdadeiro.
+        </p>
+
+        <p>
+            Nossa vida é cheia de coisas boas e amor acima de tudo.
+        </p>
+
+        <p>
+            Eu te amo hoje e sempre até o final da minha vida ❤️
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<div class="final">
+
+    <div class="final-heart">
+        ❤️
+    </div>
+
+    <h2>
+        Victor & Roberta
+    </h2>
+
+    <p>
+        Que essa seja apenas mais uma página
+        de uma história que ainda temos muito para escrever.
+    </p>
+
+    <p>
+        Feliz aniversário de namoro. ❤️
+    </p>
+
+</div>
+
+
+<footer>
+
+    Feito com amor ❤️
+
+</footer>
+
+
+<!-- =========================
+     CONTADOR AUTOMÁTICO
+========================= -->
+
+<script>
+
+const inicio = new Date("2023-09-14T00:00:00");
+
+function atualizarContador() {
+
+    const agora = new Date();
+
+    let anos = agora.getFullYear() - inicio.getFullYear();
+
+    let meses = agora.getMonth() - inicio.getMonth();
+
+    let dias = agora.getDate() - inicio.getDate();
+
+    if (dias < 0) {
+
+        meses--;
+
+        const ultimoMes = new Date(
+            agora.getFullYear(),
+            agora.getMonth(),
+            0
+        ).getDate();
+
+        dias += ultimoMes;
+    }
+
+    if (meses < 0) {
+
+        anos--;
+        meses += 12;
+    }
+
+    const diferenca =
+        agora.getTime() - inicio.getTime();
+
+    const horas =
+        Math.floor(diferenca / (1000 * 60 * 60));
+
+    const minutos =
+        Math.floor(diferenca / (1000 * 60));
+
+    const segundos =
+        Math.floor(diferenca / 1000);
+
+    const segundosDoDia =
+        segundos % 60;
+
+    const minutosDoDia =
+        minutos % 60;
+
+    const horasDoDia =
+        horas % 24;
+
+    document.getElementById("contador").innerHTML =
+
+        "<strong>" + anos + "</strong> anos, " +
+        "<strong>" + meses + "</strong> meses e " +
+        "<strong>" + dias + "</strong> dias<br>" +
+
+        "<small>" +
+        horasDoDia + " horas, " +
+        minutosDoDia + " minutos e " +
+        segundosDoDia + " segundos" +
+        "</small>";
+
+}
+
+atualizarContador();
+
+setInterval(atualizarContador, 1000);
+
+</script>
+
+
+</body>
+          </html>
